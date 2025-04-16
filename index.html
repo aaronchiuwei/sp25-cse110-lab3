@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="meeting minutes for a team">
+    <meta name="author" content="Aaron Chiuwei">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Minutes</title>
+    <link rel="icon" type="image/png" href="icons8-clock-32.png">
+  </head>
+  <body>
+    <header>
+        <h1>CSE 110 Meeting Minutes</h1>
+        <p>Team: 3</p>
+    </header>
+
+    <nav>
+        <h2>Contents</h2>
+        <ul>
+            <li><a href="#meeting-info">Meeting Information</a></li>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#unfinished">Unfinished Business</a></li>
+            <li><a href="#new">New Business</a></li>
+            <li><a href="#misc">Miscellaneous</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#form">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="meeting-info">
+            <h2>Meeting Information</h2>
+            <h3>Topic: Brainstorm</h3>
+            <p><strong>Date:</strong> April 15, 2025</p>
+            <p><strong>Time:</strong> 6:20 PM - 6:30 PM</p>
+            <p><strong>Location:</strong> GH 242</p>
+            <p><strong>Meeting Type:</strong> <em>Warmup Exercise Discussion</em></p>
+        </section>
+
+        <section id="attendance">
+            <h2>Attendance</h2>
+            <ul>
+                <li><b>Team Lead</b> - <i>Present</i></li>
+                <li><b>Frontend Developer</b> <i>Present</i></li>
+                <li><b>UX Designer</b> <i>Late</i></li>
+                <li><b>Backend Developer</b> <i>Absent</i></li>
+            </ul>
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Project Summary</li>
+                <li>Teammate Schedules</li>
+                <li>Technology Stack Discussion</li>
+                <li>Timeline Planning</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="unfinished">
+            <h2>Unfinished Topics/Questions from the Previous Meeting</h2>
+            <p>Should we use Discord or Zoom for online meetings?</p>
+        </section>
+
+        <hr>
+
+        <section id="new-business">
+            <h2>New Business</h2>
+            <h3>Project Overview</h3>
+            <p>The team discussed creating a 21 Blackjack game for the warmup exercise.</p>
+            
+            <h3>Features Brainstorming</h3>
+            <ul>
+                <li>Add Splits and Doubles</li>
+                <li>Add Suggesstions based on the Book</li>
+                <img src="Media/blackjackbook.jpg" alt="Chart for blackjack strategy" width="300">
+            </ul>
+
+            <h3>Technology Stack</h3>
+            <div>
+                <span>HTML, CSS, JavaScript</span>
+
+                <br>
+
+                <span>No Libraries or Frameworks allowed</span>
+            </div>
+        </section>
+
+        <section id="misc">
+            <h2>Miscellaneous</h2>
+            <details>
+                <summary>Questions</summary>
+                <ul>
+                    <li>Should we add bots</li>
+                    <li>How much money should we give the player</li>
+                </ul>
+            </details>
+            
+            <details>
+                <summary>Tasks</summary>
+                <ul>
+                    <li>Person 1: Design Frontend</li>
+                    <li>Person 2: Create the backend game logic</li>
+                    <li>Person 3: Create the suggestions</li>
+                </ul>
+            </details>
+        </section>
+
+        <section id="media">
+            <h2>Sample Blackjack Hands</h2>
+            
+            <h3>Sample Video Recording</h3>
+            <video controls width="400">
+                <source src="Media/blackjack.mp4" type="video/mp4">
+            </video>
+            
+            <h3>Sample Audio Recording</h3>
+            <audio controls>
+                <source src="Media/blackjackaudio.mp3" type="audio/mpeg">
+            </audio>
+
+        </section>
+    </main>
+
+    <hr>
+
+    <section id="form">
+        <h2>Form</h2>
+        <form>
+            <fieldset>
+                <legend>Participant Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <br><br>
+                
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <br><br>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Meeting Evaluation</legend>
+                
+                <label for="rating">How would you rate this meeting</label>
+                <input list="value-list" id="values" name="values">
+                <datalist id="value-list">
+                    <option value="Excellent">
+                    <option value="Good">
+                    <option value="Average">
+                    <option value="Bad">
+                    <option value="Poor">
+                </datalist>
+                
+                <p>Select all that apply:</p>
+                <input type="checkbox" id="organized" name="organized">
+                <label for="organized">Well organized</label><br>
+                
+                <input type="checkbox" id="productive" name="productive">
+                <label for="productive">Productive</label><br>
+                
+                <input type="checkbox" id="informative" name="informative">
+                <label for="informative">Informative</label><br><br>
+                
+                <label for="suggestions">Questions:</label><br>
+                <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Meeting Preferences</legend>
+                <p>Are you OK with staying after class?</p>
+                <input type="radio" id="yes" name="y/n" value="yes">
+                <label for="yes">Yes</label><br>
+                
+                <input type="radio" id="no" name="y/n" value="no">
+                <label for="no">No</label><br>
+                
+                <br>
+
+                <label for="meeting-type">Preferred meeting type:</label>
+                <select id="meeting-type" name="meeting-type">
+                    <option value="blank"> </option>
+                    <option value="in-person">In-Person</option>
+                    <option value="Zoom">Zoom</option>
+                </select>
+            </fieldset>
+            
+            <br>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Meeting minutes prepared by: Aaron Chiuwei</p>
+        <p>&copy; 2025 Aaron Inc</p>
+    </footer>
+  </body>
+</html>
