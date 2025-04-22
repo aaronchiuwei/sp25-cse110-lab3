@@ -1,2 +1,2 @@
 # Lab 2 - Starter
-URL to published site [lab 2 site](https://aaronchiuwei.github.io/Lab2_Starter/)
+URL to GitHub Pages site [LAB 3 SITE](https://aaronchiuwei.github.io/sp25-cse110-lab3/)
