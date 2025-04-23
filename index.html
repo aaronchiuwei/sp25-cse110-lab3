@@ -7,6 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minutes</title>
     <link rel="icon" type="image/png" href="icons8-clock-32.png">
+    <link rel="stylesheet" href="main.css"> <!-- external -->
+    <!-- internal -->
+    <style>
+      .highlight {
+        background-color: #fffacd;
+        padding: 8px;
+        border-left: 4px solid #ffd700;
+        margin-bottom: 10px;
+      }
+      details {
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color: #f0f0f0;
+        border-radius: var(--border-radius);
+      }
+      summary {
+        cursor: pointer;
+        font-weight: bold;
+      }
+      fieldset {
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -21,7 +45,7 @@
             <li><a href="#attendance">Attendance</a></li>
             <li><a href="#agenda">Agenda</a></li>
             <li><a href="#unfinished">Unfinished Business</a></li>
-            <li><a href="#new">New Business</a></li>
+            <li><a href="#new-business">New Business</a></li>
             <li><a href="#misc">Miscellaneous</a></li>
             <li><a href="#media">Media</a></li>
             <li><a href="#form">Form</a></li>
@@ -29,7 +53,7 @@
     </nav>
 
     <main>
-        <section id="meeting-info">
+        <section id="meeting-info" class="meeting-info">
             <h2>Meeting Information</h2>
             <h3>Topic: Brainstorm</h3>
             <p><strong>Date:</strong> April 15, 2025</p>
@@ -60,7 +84,7 @@
 
         <hr>
 
-        <section id="unfinished">
+        <section id="unfinished" class="highlight">
             <h2>Unfinished Topics/Questions from the Previous Meeting</h2>
             <p>Should we use Discord or Zoom for online meetings?</p>
         </section>
@@ -75,7 +99,7 @@
             <h3>Features Brainstorming</h3>
             <ul>
                 <li>Add Splits and Doubles</li>
-                <li>Add Suggesstions based on the Book</li>
+                <li>Add Suggestions based on the Book</li>
                 <li>                
                     <img src="Media/blackjackbook.jpg" alt="Chart for blackjack strategy" width="300">
                 </li>
@@ -83,11 +107,11 @@
 
             <h3>Technology Stack</h3>
             <div>
-                <span>HTML, CSS, JavaScript</span>
+                <span style="color: #4a6fa5; font-weight: bold;">HTML, CSS, JavaScript</span> <!-- inline -->
 
                 <br>
 
-                <span>No Libraries or Frameworks allowed</span>
+                <span style="color: #d64045; font-style: italic;">No Libraries or Frameworks allowed</span> <!-- inline -->
             </div>
         </section>
 
@@ -123,7 +147,6 @@
             <audio controls>
                 <source src="Media/blackjackaudio.mp3" type="audio/mpeg">
             </audio>
-
         </section>
     </main>
 
@@ -199,7 +222,7 @@
 
     <footer>
         <p>Meeting minutes prepared by: Aaron Chiuwei</p>
-        <p>&copy; 2025 CSE 110 Lab 2</p>
+        <p>&copy; 2025 CSE 110 Lab 3</p>
     </footer>
   </body>
 </html>
