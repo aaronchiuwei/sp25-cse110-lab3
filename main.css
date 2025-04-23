@@ -2,7 +2,7 @@
 :root {
     --primary-color: #4a6fa5;
     --secondary-color: #e3b23c;
-    --text-color: color(display-p3 0 0 0 / .);
+    --text-color: color(display-p3 0 0 0 / .9);
     --background-color: ivory;
     --accent-color: #f00;
     --spacing-unit: 16px;
@@ -84,7 +84,7 @@ section {
 }
 
 details summary {
-    color: color-mix(in srgb, var(--primary-color) 70%, var(--accent-color) 30%);
+    color: color-mix(in hsl, hsl(200 50 80), coral 80%);
     font-weight: bold;
     cursor: pointer;
 }
