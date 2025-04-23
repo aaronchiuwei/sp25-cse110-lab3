@@ -84,7 +84,7 @@ section {
 }
 
 details summary {
-    color: color-mix(in hsl, hsl(200 50 80), coral 80%);
+    color: color-mix(in hsl, hsl(200 50% 80%), coral 80%);
     font-weight: bold;
     cursor: pointer;
 }
