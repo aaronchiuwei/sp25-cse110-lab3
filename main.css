@@ -84,7 +84,7 @@ section {
 }
 
 details summary {
-    color: color-mix(in hsl, hsl(125 60 90), salmon 85%);
+    color: color-mix(in hsl, hsl(125), salmon 85%);
     font-weight: bold;
     cursor: pointer;
 }
